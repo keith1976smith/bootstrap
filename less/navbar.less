@@ -1,8 +1,7 @@
 //
 // Navbars
 // --------------------------------------------------
-
-
+@import "mixins";
 // Wrapper and base class
 //
 // Provide a static navbar from which we expand to create full-width, fixed, and
@@ -209,6 +208,7 @@
     padding-top:    10px;
     padding-bottom: 10px;
     line-height: @line-height-computed;
+    font-size: 16px;
   }
 
   @media (max-width: @screen-xs-max) {
@@ -351,7 +351,9 @@
 
 // Default navbar
 .navbar-default {
-  background-color: @navbar-default-bg;
+    
+  #gradient > .vertical(lighten(@julie-red, 15%), @julie-red);
+
   border-color: @navbar-default-border;
 
   .navbar-brand {
