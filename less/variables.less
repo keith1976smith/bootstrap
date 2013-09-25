@@ -12,6 +12,7 @@
 @julie-blue: #99c4bf;
 @julie-red: #e7183e;
 @julie-grey: #98a9a9;
+@julie-blue-darker: darken(@julie-blue, 30%);
 
 
 // Grays
@@ -36,7 +37,7 @@
 // -------------------------
 
 @body-bg:               #fff;
-@text-color:            @gray-dark;
+@text-color:            @julie-grey;
 
 // Links
 // -------------------------
@@ -65,11 +66,12 @@
 
 @line-height-base:        1.428571429; // 20/14
 @line-height-computed:    floor(@font-size-base * @line-height-base); // ~20px
+@letter-spacing:          1px;
 
 @headings-font-family:    @font-family-base;
-@headings-font-weight:    500;
+@headings-font-weight:    normal;
 @headings-line-height:    1.1;
-@headings-color:          inherit;
+@headings-color:          @julie-blue-darker;
 
 
 // Iconography
@@ -124,9 +126,9 @@
 
 @btn-font-weight:                normal;
 
-@btn-default-color:              #333;
-@btn-default-bg:                 #fff;
-@btn-default-border:             #ccc;
+@btn-default-color:              @julie-blue-darker;
+@btn-default-bg:                 lighten(@julie-blue,20%);
+@btn-default-border:             @julie-blue;
 
 @btn-primary-color:              #fff;
 @btn-primary-bg:                 @brand-primary;
@@ -158,7 +160,7 @@
 @input-bg-disabled:              @gray-lighter;
 
 @input-color:                    @gray;
-@input-border:                   #ccc;
+@input-border:                   @julie-blue;
 @input-border-radius:            @border-radius-base;
 @input-border-focus:             #66afe9;
 
@@ -436,7 +438,7 @@
 @label-warning-bg:            @brand-warning;
 @label-danger-bg:             @brand-danger;
 
-@label-color:                 #fff;
+@label-color:                 @julie-blue-darker;
 @label-link-hover-color:      #fff;
 
 
